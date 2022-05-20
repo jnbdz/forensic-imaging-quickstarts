@@ -28,14 +28,22 @@ This section is all about the Linux tools.
 - `mt` - Gives subcommands to streaming tape device.
 - `nvme` - 
 - `df` - report file system disk space usage
+- `gzip`, `gunzip`, `zcat` - compress or expand files
+- `ewfverify` - verifies media data stored in EWF files 
+- `affinfo` - print information about an AFF file
+- `img_stat` - Display details of an image file 
+- `dc3dd` - convert and copy a file
+- `growisofs` - combined mkisofs frontend/DVD recording program.
+- `mkisofs` - create an hybrid ISO9660/JOLIET/HFS filesystem with optional Rock Ridge attributes.
 
 ## Setup
 ### Debian
 - `sg3-utils` this includes tools like `sg_raw` (SCSI or NVMe disks)
 ```bash
 sudo apt update
-sudo apt install -y sg3-utils exif lshw hddtemp
+sudo apt install -y sg3-utils exif lshw hddtemp dc3dd
 ```
+> This `apt install` was tested on Kali Linux.
 
 ## Linux Kernel and Filesystem
 ![](./assets/Linux-storage-stack-diagram_v4.10.png)
