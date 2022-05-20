@@ -15,3 +15,7 @@ This section is all about the Linux tools.
 sudo apt update
 sudo apt install -y sg3-utils
 ```
+
+## Linux Kernel and Filesystem
+![](./assets/Linux-storage-stack-diagram_v4.10.png)
+*The Linux Storage Stack Diagram (Source: https://www.thomas-krenn.com/en/wiki/Linux_Storage_Stack_Diagram, used under CC Attribution-ShareAlike 3.0 Unported)*
