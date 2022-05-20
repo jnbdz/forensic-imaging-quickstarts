@@ -21,13 +21,20 @@ This section is all about the Linux tools.
 - `lshw` - list hardware
 - `lsusb` - list USB devices
 - `hdparm` - get/set SATA/IDE device parameters
+- `smartctl` - Control and Monitor Utility for SMART Disks
+- `mmls` - Display the partition layout of a volume system  (partition tables)
+- `sedutil-cli` - Is a utility to manage self encrypting drives that conform to the Trusted Computing Group (TCG) OPAL 2.0 SSC specification.
+- `hddtemp` - Utility to monitor hard drive temperature
+- `mt` - Gives subcommands to streaming tape device.
+- `nvme` - 
+- `df` - report file system disk space usage
 
 ## Setup
 ### Debian
 - `sg3-utils` this includes tools like `sg_raw` (SCSI or NVMe disks)
 ```bash
 sudo apt update
-sudo apt install -y sg3-utils exif lshw
+sudo apt install -y sg3-utils exif lshw hddtemp
 ```
 
 ## Linux Kernel and Filesystem
