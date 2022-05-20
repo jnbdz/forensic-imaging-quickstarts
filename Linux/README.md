@@ -40,3 +40,14 @@ sudo apt install -y sg3-utils exif lshw hddtemp
 ## Linux Kernel and Filesystem
 ![](./assets/Linux-storage-stack-diagram_v4.10.png)
 *The Linux Storage Stack Diagram (Source: https://www.thomas-krenn.com/en/wiki/Linux_Storage_Stack_Diagram, used under CC Attribution-ShareAlike 3.0 Unported)*
+
+## Commands
+## `nvme`
+
+**Resouces:**
+- https://nvmexpress.org/open-source-nvme-management-utility-nvme-command-line-interface-nvme-cli/
+- https://github.com/linux-nvme/nvme-cli
+- https://github.com/linux-nvme
+
+## `df`
+To make the output more readable use the `-h` flag.
