@@ -23,6 +23,7 @@ This section is all about the Linux tools.
 - `hdparm` - get/set SATA/IDE device parameters
 - `smartctl` - Control and Monitor Utility for SMART Disks
 - `mmls` - Display the partition layout of a volume system  (partition tables)
+- `mmcat` - Output the contents of a partition to stdout
 - `sedutil-cli` - Is a utility to manage self encrypting drives that conform to the Trusted Computing Group (TCG) OPAL 2.0 SSC specification.
 - `hddtemp` - Utility to monitor hard drive temperature
 - `mt` - Gives subcommands to streaming tape device.
@@ -35,6 +36,12 @@ This section is all about the Linux tools.
 - `dc3dd` - convert and copy a file
 - `growisofs` - combined mkisofs frontend/DVD recording program.
 - `mkisofs` - create an hybrid ISO9660/JOLIET/HFS filesystem with optional Rock Ridge attributes.
+- `blkcat` - Display the contents of file system data unit in a disk image.
+- `blkls` - List or output file system data units.
+- `fsstat` - Display general details of a file system
+- `gpart` - control utility for the disk partitioning GEOM class
+- `dcfldd` - enhanced version of dd for forensics and security. Copy a file, converting and formatting according to the options.
+- `veracrypt` - Free and open source disk encryption software.
 
 ## Setup
 ### Debian
