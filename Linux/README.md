@@ -64,8 +64,6 @@ sudo apt install -y sg3-utils exif lshw hddtemp dc3dd
         - hard links
         - soft/symbolic links (similar to Microsoft Windows LNK files)
 
-> **Of interest for forensic investigators:** block device files of attached subject
-
 ### Kernel Device Detection
 
 
