@@ -43,6 +43,8 @@ This section is all about the Linux tools.
 - `gpart` - control utility for the disk partitioning GEOM class
 - `dcfldd` - enhanced version of dd for forensics and security. Copy a file, converting and formatting according to the options.
 - `veracrypt` - Free and open source disk encryption software.
+- `udev` - Dynamic device management
+- `udevadm` - udev management tool
 
 ## Setup
 ### Debian
