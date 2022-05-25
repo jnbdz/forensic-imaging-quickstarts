@@ -43,6 +43,9 @@ For banking as an example: Monetary Authority of Singapore (MAS)
 - Open Source is better for educational reasons
 
 ## Resources
+- [Forensic Technology Center of Excellence - A program of the National Institute of Justice](https://forensiccoe.org/)
+    - [Just Digital Forensics Program Development and Outlook](https://forensiccoe.org/podcast-2022fepac-ep3/) (https://nij.ojp.gov/library/publications/just-science-podcast-just-digital-forensics-program-development-and-outlook)
+    - [Just Literature on Stress & Resiliency in Forensic Science](https://forensiccoe.org/2021-workforce-resiliency-ep4/) (https://nij.ojp.gov/library/publications/just-science-podcast-just-literature-stress-resiliency-forensic-science)
 - [Practical Forensic Imaging | Securing Digital Evidence with Linux Tools
 by Bruce Nikkel](https://nostarch.com/forensicimaging) (ISBN-13: 978-1-59327-793-2) [Amazon.ca](https://www.amazon.ca/Practical-Forensic-Imaging-Securing-Evidence/dp/1593277938/ref=sr_1_1?crid=77TB014JA0DR&keywords=Practical+Forensic+Imaging&qid=1653000842&sprefix=practical+forensic+imaging+%2Caps%2C203&sr=8-1)
 - [International Journal of Digital Evidence](https://dblp.org/db/journals/ijde/index.html)
@@ -50,3 +53,10 @@ by Bruce Nikkel](https://nostarch.com/forensicimaging) (ISBN-13: 978-1-59327-793
 - [US DOJ Electronic Crime Scene Investigation: A guide for First Responders](https://www.ojp.gov/pdffiles1/nij/219941.pdf)
 - [University At Albany - Capital Region Cyber Crime Partnership (CRCCP)](https://www.albany.edu/crccp/resources.html)
 - [10 Best Security Live CD Distros (Pen-Test, Forensics & Recovery) (old article from 2006)](https://www.darknet.org.uk/2006/03/10-best-security-live-cd-distros-pen-test-forensics-recovery/)
+- [New Approaches to Digital Evidence Acquisition and Analysis | National Institute of Justice](https://nij.ojp.gov/topics/articles/new-approaches-digital-evidence-acquisition-and-analysis)
+- [Improving the Collection of Digital Evidence | National Institute of Justice](https://nij.ojp.gov/topics/articles/improving-collection-digital-evidence) (Usage of AI (deep learning))
+- [DFORC2](https://github.com/RANDCorporation/DFORC2) (DFORC2 is a cloud-based digital forensics platform, developed at the RAND Corporation and backed by Autopsy and The Sleuth Kit. This repository is used to deploy the DFORC2 backend to AWS with Kubernetes. The backend also incorporates the autopsy-jar and spark-streaming-apps repositories. The DFORC2 frontend client comprises RAND's Linux-compati…)
+    - [DFORC2 | JNBDZ (fork)](https://github.com/jnbdz/DFORC2)
+- [Device Forensics | Grier Forensics](https://www.grierforensics.com/capabilities/device-forensics/)
+- [Digital Evidence and the U.S. Criminal Justice System | Office of Justice Programs](https://www.ojp.gov/pdffiles1/nij/grants/248770.pdf)
+- [Publications Listing | Office of Justice Programs](https://nij.ojp.gov/library/publications/list?subtopic=5741)
