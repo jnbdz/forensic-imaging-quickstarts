@@ -29,6 +29,7 @@ This section is all about the Linux tools.
 - `mt` - Gives subcommands to streaming tape device.
 - `nvme` - 
 - `df` - report file system disk space usage
+- `du` - estimate file space usage
 - `gzip`, `gunzip`, `zcat` - compress or expand files
 - `ewfverify` - verifies media data stored in EWF files 
 - `affinfo` - print information about an AFF file
@@ -53,6 +54,21 @@ sudo apt install -y sg3-utils exif lshw hddtemp dc3dd
 > This `apt install` was tested on Kali Linux.
 
 ## Linux Kernel and Filesystem
+- Everything on Unix/Linux systems is a *file*
+    - Each file is of a specific type
+        - regular files
+        - directories
+        - Block devices
+        - character devices
+        - named pipes
+        - hard links
+        - soft/symbolic links (similar to Microsoft Windows LNK files)
+
+> **Of interest for forensic investigators:** block device files of attached subject
+
+### Kernel Device Detection
+
+
 ![](./assets/Linux-storage-stack-diagram_v4.10.png)
 *The Linux Storage Stack Diagram (Source: https://www.thomas-krenn.com/en/wiki/Linux_Storage_Stack_Diagram, used under CC Attribution-ShareAlike 3.0 Unported)*
 
