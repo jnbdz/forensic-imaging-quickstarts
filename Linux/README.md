@@ -97,7 +97,7 @@ To make the output more readable use the `-h` flag.
     - executes setup or removal of scripts and programs
     - sends messages to other deamons via `dbus` maybe others
 - You can see it in action with this command: `udevadm monitor`
-- You can also get information about a devices associated files/paths: `udevadmin info /dev/<device>`
+- You can also get information about a devices associated files/paths: `udevadm info /dev/<device>`
 
 ## `udevadm`
 For monitoring devices being removed and added: `udevadm monitor`
