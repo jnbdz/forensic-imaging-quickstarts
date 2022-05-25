@@ -45,6 +45,7 @@ This section is all about the Linux tools.
 - `veracrypt` - Free and open source disk encryption software.
 - `udev` - Dynamic device management
 - `udevadm` - udev management tool
+- `mknod` - make block or character special files
 
 ## Setup
 ### Debian
@@ -67,7 +68,12 @@ sudo apt install -y sg3-utils exif lshw hddtemp dc3dd
         - soft/symbolic links (similar to Microsoft Windows LNK files)
 
 ### Kernel Device Detection
-
+- `/dev` dir stores files that correspond to devices
+- `mknod` is the command for creation of devices files
+    - It is done automatically
+    - Past system: `devfs`
+    - `udev` is the program that loads devices (the deamon can be `systemd-udevd`)
+    - The Kernel is the one calling `udev`
 
 ![](./assets/Linux-storage-stack-diagram_v4.10.png)
 *The Linux Storage Stack Diagram (Source: https://www.thomas-krenn.com/en/wiki/Linux_Storage_Stack_Diagram, used under CC Attribution-ShareAlike 3.0 Unported)*
@@ -82,3 +88,16 @@ sudo apt install -y sg3-utils exif lshw hddtemp dc3dd
 
 ## `df`
 To make the output more readable use the `-h` flag.
+
+## `udev`
+- Is called by the Kernel
+- It creates: 
+    - devices (in `/dev`)
+    - proper permissions
+    - executes setup or removal of scripts and programs
+    - sends messages to other deamons via `dbus` maybe others
+- You can see it in action with this command: `udevadm monitor`
+- You can also get information about a devices associated files/paths: `udevadmin info /dev/<device>`
+
+## `udevadm`
+For monitoring devices being removed and added: `udevadm monitor`
