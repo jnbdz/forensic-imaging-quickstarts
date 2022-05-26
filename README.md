@@ -75,6 +75,8 @@ by Bruce Nikkel](https://nostarch.com/forensicimaging) (ISBN-13: 978-1-59327-793
 - [How to install libdvdcss in Ubuntu / Debian to play DVDs - nixCraft](https://www.cyberciti.biz/faq/installing-plugins-codecs-libdvdcss-in-debian-ubuntu-linux/)
 - [NTFS Undelete Test #1](http://dftt.sourceforge.net/test7/)
 - [Digital (Computer) Forensics Tool Testing Images](http://dftt.sourceforge.net/)
+- [Awesome Forensics Resources. Almost 300 open source forensics tools, and 600 blog posts about forensics](https://github.com/alphaSeclab/awesome-forensics)
+- [Digital Forensics Guide](https://github.com/mikeroyal/Digital-Forensics-Guide)
 ### Tools
 - https://github.com/CIRCL
 - [The Sleuth Kit (TSK) & Autopsy: Open Source Digital Forensics Tools](http://www.sleuthkit.org/) [The Sleuth Kit | GitHub](https://github.com/sleuthkit)
@@ -96,3 +98,7 @@ by Bruce Nikkel](https://nostarch.com/forensicimaging) (ISBN-13: 978-1-59327-793
 - `libdvdread4` – library for reading DVDs.
 - [MEncoder](http://www.mplayerhq.hu/MPlayer/DOCS/HTML/en/mencoder.html)
 - [Hybrid | can convert most input formats to common audio & video formats and containers, see feature list for details.](https://www.selur.de/)
+- [Tracking history of USB events on GNU/Linux](https://github.com/snovvcrash/usbrip)
+- [Web browser forensics for Google Chrome/Chromium ](https://github.com/obsidianforensics/hindsight)
+- [Andriller - is software utility with a collection of forensic tools for smartphones. It performs read-only, forensically sound, non-destructive acquisition from Android devices](https://github.com/den4uk/andriller)
+- [MemLabs | Educational, CTF-styled labs for individuals interested in Memory Forensics](https://github.com/stuxnet999/MemLabs)
