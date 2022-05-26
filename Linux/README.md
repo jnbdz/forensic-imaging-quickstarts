@@ -101,3 +101,6 @@ To make the output more readable use the `-h` flag.
 
 ## `udevadm`
 For monitoring devices being removed and added: `udevadm monitor`
+
+## Resources
+- [`/dev`](https://tldp.org/LDP/abs/html/devref1.html)
