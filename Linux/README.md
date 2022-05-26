@@ -56,7 +56,7 @@ sudo apt install -y sg3-utils exif lshw hddtemp dc3dd
 ```
 > This `apt install` was tested on Kali Linux.
 
-## Linux Kernel and Filesystem
+## Storage Devices
 - Everything on Unix/Linux systems is a *file*
     - Each file is of a specific type
         - regular files
@@ -69,11 +69,37 @@ sudo apt install -y sg3-utils exif lshw hddtemp dc3dd
 
 ### Kernel Device Detection
 - `/dev` dir stores files that correspond to devices
+    - `/dev` raw disk device files have a naming convention: 
+        - SATA & SCSI: *sd**
+        - IDE: *hd**
+        - RAID arrays: *md**
+        - NVME drives: *nvme*n**
+        - [...]
+    - Other devices of note: 
+        - `/dev/null` - discards any data written to it
+        - `/dev/zero` - steady stream of zeros
+        - `/dev/random` - stream of random data
+        - `/dev/st` - normally this is how tape drives start
+        - `/dev/dvd` - media DVD
+        - `/dev/cdrom` - media CD
+        - `/dev/sr*` - majority of the time they are symbolic links
+        - `/dev/sg*` - generic SCSI device driver interface
+        - `/dev/loop*` - 
+        - `/dev/mapper/*` - 
+    - Each invidual partitions found by the Kernel are numbered (e.g.: sda1, sda2, hda1)
+- Partition block devices == contiguous sequence of disk sectors
 - `mknod` is the command for creation of devices files
     - It is done automatically
     - Past system: `devfs`
     - `udev` is the program that loads devices (the deamon can be `systemd-udevd`)
     - The Kernel is the one calling `udev`
+
+> IMPORTANT! Forensic tools should examine raw devices and partitions without the mounting of a filesystem.
+
+> Operations for imaging are done at the block device below the system and partition scheme.
+
+## Filesystems
+- List of supported filesystems: https://en.wikipedia.org/wiki/Category:File_systems_supported_by_the_Linux_kernel
 
 ![](./assets/Linux-storage-stack-diagram_v4.10.png)
 *The Linux Storage Stack Diagram (Source: https://www.thomas-krenn.com/en/wiki/Linux_Storage_Stack_Diagram, used under CC Attribution-ShareAlike 3.0 Unported)*
