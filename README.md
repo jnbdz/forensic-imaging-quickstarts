@@ -49,6 +49,9 @@ by Bruce Nikkel](https://nostarch.com/forensicimaging) (ISBN-13: 978-1-59327-793
 - [File System Forensic Analysis](https://digital-evidence.org/fsfa/) [Amazon.ca](https://www.amazon.ca/System-Forensic-Analysis-Brian-Carrier/dp/0321268172/)
 ### Websites
 - [Brian Carrier: Digital Investigation / Forensics and  Evidence Research](https://digital-evidence.org/)
+- [The 6 Best Linux File Recovery Software | FOSS Linux](https://www.fosslinux.com/41727/the-6-best-linux-file-recovery-software.htm)
+- [CDRoller - Reading Data CD ( CDROM , CD-ROM XA ,etc.)](https://www.cdroller.com/htm/readdata.html)
+- [Partition types](https://www.win.tue.nl/~aeb/partitions/partition_types.html)
 - [Forensic Technology Center of Excellence - A program of the National Institute of Justice](https://forensiccoe.org/)
     - [Just Digital Forensics Program Development and Outlook](https://forensiccoe.org/podcast-2022fepac-ep3/) (https://nij.ojp.gov/library/publications/just-science-podcast-just-digital-forensics-program-development-and-outlook)
     - [Just Literature on Stress & Resiliency in Forensic Science](https://forensiccoe.org/2021-workforce-resiliency-ep4/) (https://nij.ojp.gov/library/publications/just-science-podcast-just-literature-stress-resiliency-forensic-science)
@@ -59,11 +62,34 @@ by Bruce Nikkel](https://nostarch.com/forensicimaging) (ISBN-13: 978-1-59327-793
 - [10 Best Security Live CD Distros (Pen-Test, Forensics & Recovery) (old article from 2006)](https://www.darknet.org.uk/2006/03/10-best-security-live-cd-distros-pen-test-forensics-recovery/)
 - [New Approaches to Digital Evidence Acquisition and Analysis | National Institute of Justice](https://nij.ojp.gov/topics/articles/new-approaches-digital-evidence-acquisition-and-analysis)
 - [Improving the Collection of Digital Evidence | National Institute of Justice](https://nij.ojp.gov/topics/articles/improving-collection-digital-evidence) (Usage of AI (deep learning))
-- [DFORC2](https://github.com/RANDCorporation/DFORC2) (DFORC2 is a cloud-based digital forensics platform, developed at the RAND Corporation and backed by Autopsy and The Sleuth Kit. This repository is used to deploy the DFORC2 backend to AWS with Kubernetes. The backend also incorporates the autopsy-jar and spark-streaming-apps repositories. The DFORC2 frontend client comprises RAND's Linux-compati…)
-    - [DFORC2 | JNBDZ (fork)](https://github.com/jnbdz/DFORC2)
 - [Device Forensics | Grier Forensics](https://www.grierforensics.com/capabilities/device-forensics/)
 - [Digital Evidence and the U.S. Criminal Justice System | Office of Justice Programs](https://www.ojp.gov/pdffiles1/nij/grants/248770.pdf)
 - [Publications Listing | Office of Justice Programs](https://nij.ojp.gov/library/publications/list?subtopic=5741)
+- [Tweaking4All.com - Linux - HandBrake - Copy a DVD to MP4 or MKV file](https://www.tweaking4all.com/video/rip-dvd-blu-ray/linux-handbrake-copy-a-dvd-to-mp4-or-mkv-file/)
+- [How to Rip DVDs With VLC - Linux Tutorials - Learn Linux Configuration](https://linuxconfig.org/how-to-rip-dvds-with-vlc)
+- [Top 5 Linux DVD RIP Software - nixCraft](https://www.cyberciti.biz/tips/linux-dvd-ripper-software.html)
+- [How to Rip a DVD (with Pictures) - wikiHow](https://www.wikihow.com/Rip-a-DVD)
+- [Ubuntu Linux play encrypted DVDs - nixCraft](https://www.cyberciti.biz/faq/howto-ubuntu-linux-playback-dvd/)
+    - `sudo apt-get install vlc xine mplayer libdvdread3`
+    - `sudo /usr/share/doc/libdvdread3/examples/install-css.sh`
 ### Tools
 - https://github.com/CIRCL
 - [The Sleuth Kit (TSK) & Autopsy: Open Source Digital Forensics Tools](http://www.sleuthkit.org/) [The Sleuth Kit | GitHub](https://github.com/sleuthkit)
+- [TestDisk, Data Recovery](https://www.cgsecurity.org/wiki/TestDisk)
+- [PhotoRec](https://www.cgsecurity.org/wiki/PhotoRec)
+- [Ddrescue - Data recovery tool | GNU Project](https://www.gnu.org/software/ddrescue/)
+- [safecopy](http://safecopy.sourceforge.net/)
+- [Redo Rescue: Backup and Recovery](https://sourceforge.net/projects/redobackup/) - [GitHub](https://github.com/redorescue/redorescue) - [Main website](http://redorescue.com/)
+- [Mondo Rescue - GPL disaster recovery solution](http://www.mondorescue.org/)
+- [DFORC2](https://github.com/RANDCorporation/DFORC2) (DFORC2 is a cloud-based digital forensics platform, developed at the RAND Corporation and backed by Autopsy and The Sleuth Kit. This repository is used to deploy the DFORC2 backend to AWS with Kubernetes. The backend also incorporates the autopsy-jar and spark-streaming-apps repositories. The DFORC2 frontend client comprises RAND's Linux-compati…)
+    - [DFORC2 | JNBDZ (fork)](https://github.com/jnbdz/DFORC2)
+- [AcidRip](https://sourceforge.net/projects/acidrip/)
+- [HandBrake – Versatile DVD ripper and video transcoder for Linux](https://handbrake.fr/) `sudo apt-get install handbrake handbrake-cli`
+- DVD::RIP – Front end for transcode and ffmpeg: `sudo apt-get install dvdrip`
+- [dvdbackup – Tool to rip DVD’s from the Linux command line](https://wiki.archlinux.org/title/dvdbackup) `sudo apt install dvdbackup`
+- thoggen – DVD backup utility (‘DVD ripper’) for Linux: `sudo apt-get install thoggen`
+- `libdvdcss2` – Simple foundation for reading DVDs – runtime libraries.
+- `libdvdnav4` – DVD navigation library.
+- `libdvdread4` – library for reading DVDs.
+- [MEncoder](http://www.mplayerhq.hu/MPlayer/DOCS/HTML/en/mencoder.html)
+- [Hybrid | can convert most input formats to common audio & video formats and containers, see feature list for details.](https://www.selur.de/)
