@@ -73,7 +73,7 @@ sudo apt install -y sg3-utils exif lshw hddtemp dc3dd
         - SATA & SCSI: *sd**
         - IDE: *hd**
         - RAID arrays: *md**
-        - NVME drives: <em>nvme**n*</em>
+        - NVME drives: <em>nvme*n*</em>
         - [...]
     - Other devices of note: 
         - `/dev/null` - discards any data written to it
