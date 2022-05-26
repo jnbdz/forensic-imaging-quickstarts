@@ -43,11 +43,15 @@ For banking as an example: Monetary Authority of Singapore (MAS)
 - Open Source is better for educational reasons
 
 ## Resources
+### Books
+- [Practical Forensic Imaging | Securing Digital Evidence with Linux Tools
+by Bruce Nikkel](https://nostarch.com/forensicimaging) (ISBN-13: 978-1-59327-793-2) [Amazon.ca](https://www.amazon.ca/Practical-Forensic-Imaging-Securing-Evidence/dp/1593277938/ref=sr_1_1?crid=77TB014JA0DR&keywords=Practical+Forensic+Imaging&qid=1653000842&sprefix=practical+forensic+imaging+%2Caps%2C203&sr=8-1)
+- [File System Forensic Analysis](https://digital-evidence.org/fsfa/) [Amazon.ca](https://www.amazon.ca/System-Forensic-Analysis-Brian-Carrier/dp/0321268172/)
+### Websites
+- [Brian Carrier: Digital Investigation / Forensics and  Evidence Research](https://digital-evidence.org/)
 - [Forensic Technology Center of Excellence - A program of the National Institute of Justice](https://forensiccoe.org/)
     - [Just Digital Forensics Program Development and Outlook](https://forensiccoe.org/podcast-2022fepac-ep3/) (https://nij.ojp.gov/library/publications/just-science-podcast-just-digital-forensics-program-development-and-outlook)
     - [Just Literature on Stress & Resiliency in Forensic Science](https://forensiccoe.org/2021-workforce-resiliency-ep4/) (https://nij.ojp.gov/library/publications/just-science-podcast-just-literature-stress-resiliency-forensic-science)
-- [Practical Forensic Imaging | Securing Digital Evidence with Linux Tools
-by Bruce Nikkel](https://nostarch.com/forensicimaging) (ISBN-13: 978-1-59327-793-2) [Amazon.ca](https://www.amazon.ca/Practical-Forensic-Imaging-Securing-Evidence/dp/1593277938/ref=sr_1_1?crid=77TB014JA0DR&keywords=Practical+Forensic+Imaging&qid=1653000842&sprefix=practical+forensic+imaging+%2Caps%2C203&sr=8-1)
 - [International Journal of Digital Evidence](https://dblp.org/db/journals/ijde/index.html)
 - [Scientific Working Group on Digital Evidence (SWGDE)](https://www.swgde.org/) Specified definitions and standards (including Standard Operating Procedures (SOPs)) for law enforcement
 - [US DOJ Electronic Crime Scene Investigation: A guide for First Responders](https://www.ojp.gov/pdffiles1/nij/219941.pdf)
@@ -60,4 +64,6 @@ by Bruce Nikkel](https://nostarch.com/forensicimaging) (ISBN-13: 978-1-59327-793
 - [Device Forensics | Grier Forensics](https://www.grierforensics.com/capabilities/device-forensics/)
 - [Digital Evidence and the U.S. Criminal Justice System | Office of Justice Programs](https://www.ojp.gov/pdffiles1/nij/grants/248770.pdf)
 - [Publications Listing | Office of Justice Programs](https://nij.ojp.gov/library/publications/list?subtopic=5741)
+### Tools
 - https://github.com/CIRCL
+- [The Sleuth Kit (TSK) & Autopsy: Open Source Digital Forensics Tools](http://www.sleuthkit.org/) [The Sleuth Kit | GitHub](https://github.com/sleuthkit)
