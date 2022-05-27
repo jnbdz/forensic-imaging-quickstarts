@@ -104,3 +104,7 @@ by Bruce Nikkel](https://nostarch.com/forensicimaging) (ISBN-13: 978-1-59327-793
 - [Web browser forensics for Google Chrome/Chromium ](https://github.com/obsidianforensics/hindsight)
 - [Andriller - is software utility with a collection of forensic tools for smartphones. It performs read-only, forensically sound, non-destructive acquisition from Android devices](https://github.com/den4uk/andriller)
 - [MemLabs | Educational, CTF-styled labs for individuals interested in Memory Forensics](https://github.com/stuxnet999/MemLabs)
+
+## Credits
+- [basic-forensics-imaging-kit.jpg (.png)](https://search.openverse.engineering/image/27a83bbf-c46f-422e-8089-c65100339566)
+- [tux-inflated.jpg (.png)](https://search.openverse.engineering/image/c3823873-89bd-41b3-9989-67bfe5ea3e61)
