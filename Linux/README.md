@@ -1,4 +1,4 @@
-<img src="../assets/tux-inflated.png" alt="Tux" style="width: 200px;" align="right">
+<img src="../assets/tux-inflated.png" alt="Tux" style="width: 255px;" align="right">
 
 # Linux | Forensic Imaging | Quickstarts
 There are many open-source tools out there to help with forensic imaging.
