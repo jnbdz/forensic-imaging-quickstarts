@@ -89,7 +89,7 @@ sudo apt install -y sg3-utils exif lshw hddtemp dc3dd
         - `/dev/sd*` - for SCSI and SATA
         - `/dev/hd*` - for IDE
         - `/dev/md*` - for RAID arrays
-        - `/dev/nvme&#42;n&#42;` - for NVME drives
+        - `/dev/nvme*n*` - for NVME drives
         - `/dev/loop*` - 
         - `/dev/mapper/*` - 
     - Each invidual partitions found by the Kernel are numbered (e.g.: sda1, sda2, hda1)
@@ -180,3 +180,4 @@ To make the output more readable use the `-h` flag.
 
 ## Resources
 - [`/dev`](https://tldp.org/LDP/abs/html/devref1.html)
+- [Managing devices in Linux | Opensource.com](https://opensource.com/article/16/11/managing-devices-linux)
