@@ -86,6 +86,10 @@ sudo apt install -y sg3-utils exif lshw hddtemp dc3dd
         - `/dev/cdrom` - media CD
         - `/dev/sr*` - majority of the time they are symbolic links
         - `/dev/sg*` - generic SCSI device driver interface
+        - `/dev/sd*` - for SCSI and SATA
+        - `/dev/hd*` - for IDE
+        - `/dev/md*` - for RAID arrays
+        - `/dev/nvme&#42;n&#42;` - for NVME drives
         - `/dev/loop*` - 
         - `/dev/mapper/*` - 
     - Each invidual partitions found by the Kernel are numbered (e.g.: sda1, sda2, hda1)
@@ -95,16 +99,59 @@ sudo apt install -y sg3-utils exif lshw hddtemp dc3dd
     - Past system: `devfs`
     - `udev` is the program that loads devices (the deamon can be `systemd-udevd`)
     - The Kernel is the one calling `udev`
+    - The event information can also be found in the `dbus`
 
 > IMPORTANT! Forensic tools should examine raw devices and partitions without the mounting of a filesystem.
 
 > Operations for imaging are done at the block device below the system and partition scheme.
 
+> When doing forensic acquisition and analysis activities, understanding Linux device tree is important
+> 
+> Important to find: 
+> - suspect drive
+> - write blocker
+> - [...]
+
+#### In `/dev` (storage)
+- In `/dev` directory attached drives will appear as *block devices*
+- A contiguous sequence of disk sectors are partition block devices
+- A partition contains: 
+    - filsesystem (that can be mounted by the kernel)
+
 ## Filesystems
 - List of supported filesystems: https://en.wikipedia.org/wiki/Category:File_systems_supported_by_the_Linux_kernel
+- VFS (Virtual File System) is a abstraction layer to provide a consistent interface for different file system types
+- The VFS allows the mounting of: 
+    - EXT&#42;
+    - NTFS
+    - FAT
+    - network-based filesystems: 
+        - nfs
+        - sambafs/smbfs
+    - userspace filesystems based on [FUSE](https://en.wikipedia.org/wiki/Filesystem_in_Userspace)
+    - stackable filesystems
+        - encryptfs
+        - unionfs
+    - other pseudo filesystems: 
+        - sysfs
+        - proc
+    - many others 
+
+> NOTE: When performing forensic acquisition file system support is not necessary.Imaging process is done at the block device level (it is under the file system and the partition scheme)
+
+This diagram helps you understand the relationship among (within the Linux kernel):
+- filesystems
+- devices
+- device drivers
+- hardware devices
 
 ![](./assets/Linux-storage-stack-diagram_v4.10.png)
 *The Linux Storage Stack Diagram (Source: https://www.thomas-krenn.com/en/wiki/Linux_Storage_Stack_Diagram, used under CC Attribution-ShareAlike 3.0 Unported)*
+
+### Mounting vs Attached disk
+To acquire a device or even access it with forensic analysis tools **it does not need to be mounted**.
+
+
 
 ## Commands
 ## `nvme`
@@ -128,7 +175,8 @@ To make the output more readable use the `-h` flag.
 - You can also get information about a devices associated files/paths: `udevadm info /dev/<device>`
 
 ## `udevadm`
-For monitoring devices being removed and added: `udevadm monitor`
+- For monitoring devices being removed and added: `udevadm monitor`
+- Get the list of the associated files and paths for attached devices: `udevadm info /dev/sdf`
 
 ## Resources
 - [`/dev`](https://tldp.org/LDP/abs/html/devref1.html)
