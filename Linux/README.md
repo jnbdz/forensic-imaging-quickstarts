@@ -5,6 +5,12 @@ There are many open-source tools out there to help with forensic imaging.
 
 This section is all about the Linux tools.
 
+## Forensic tools
+- Sleuth Kit
+- dcfldd
+- foremost
+- [...]
+
 ## Command list
 - `sg_raw` - send arbitrary SCSI or NVMe command to a device
 - `dmesg` - print or control the kernel ring buffer
@@ -149,7 +155,30 @@ This diagram helps you understand the relationship among (within the Linux kerne
 *The Linux Storage Stack Diagram (Source: https://www.thomas-krenn.com/en/wiki/Linux_Storage_Stack_Diagram, used under CC Attribution-ShareAlike 3.0 Unported)*
 
 ### Mounting vs Attached disk
-To acquire a device or even access it with forensic analysis tools **it does not need to be mounted**.
+- To acquire a device or even access it with forensic analysis tools **it does not need to be mounted**.
+- Mounting means that the standard file access tools like fila managers and other applications can access it.
+- Once it is mounted it will be apart of Linux filesystem tree.
+- Called *mount point* (e.g.: `/mnt` attached to it you have your drive) (`mount /dev/sdb1 /mnt`)
+- To unmount: `umount /mnt` or `umount /dev/sdb1` (those are just examples your storage device might be name differently)
+- You need to `umount` to prevent filesystem corruption
+- After an `umount` the raw disk is still visible to the kernel and accessible bye block device tools
+
+> **IMPORTANT!** Don't attach or `mount` a drive (you are investigating) without a write block. It might modify, damage, and destroy evidence.
+> In modern OS for example it could change the timestamps as the files and directories are accessed.
+> Userspace deamons can also cause changes (e.g.: search indexers, thumbnail generators, etc).
+> The journaling FS could be overwriten.
+
+> **NOTE:** A *write blocker* will make the drive that is mounted read-only.
+
+> **NOTE:** with forensic tools you can access filesystems without `mount`.
+> If the tools cannot identify the FS you might need to specify it.
+
+The reasons why a FS might not be identify by the kernel: 
+- FS is not supported by the host (lacking the kernel module or they are just no existing support)
+- Partition table is corrupted or missing
+- Deleted partition
+- FS offset on the disk is unknown
+- FS needs to be made accessible (unlock device, decrypt partition, etc)
 
 
 
