@@ -18,6 +18,52 @@ sudo apt install kali-tools-forensics
 - dcfldd
 - foremost
 - [...]
+### Comes with *Kali tools forensics*
+- [**afflib-tools**](https://packages.debian.org/unstable/afflib-tools) - The Advanced Forensic Format (AFF) is on-disk format for storing computer forensic information. Critical features of AFF include:
+    - AFF allows you to store both computer forensic data and associated
+   metadata in one or more files.
+    - AFF allows files to be digital signed, to provide for
+   chain-of-custody and long-term file integrity.
+    - AFF allows for forensic disk images to stored encrypted and decrypted on-the-fly for processing. This allows disk images containing privacy sensitive material to be stored on the Internet.
+- [**apktool**](https://packages.debian.org/unstable/apktool) -  A tool for reverse engineering 3rd party, closed, binary Android apps. It can decode resources to nearly original form and rebuild them after making some modifications; it makes possible to debug smali code step by step. Also it makes working with an app easier because of project-like file structure and automation of some repetitive tasks like building apk.
+- [**autopsy**](https://packages.debian.org/unstable/autopsy) - The Autopsy Forensic Browser is a graphical interface to the command line digital forensic analysis tools in The Sleuth Kit. Together, The Sleuth Kit and Autopsy provide many of the same features as commercial digital forensics tools for the analysis of Windows and UNIX file systems (NTFS, FAT, FFS, EXT2FS, and EXT3FS).
+- [**binwalk**](https://packages.debian.org/unstable/binwalk) - Binwalk is a tool for searching a given binary image for embedded files and executable code. Specifically, it is designed for identifying files and code embedded inside of firmware images. Binwalk uses the libmagic library, so it is compatible with magic signatures created for the Unix file utility. Binwalk also includes a custom magic signature file which contains improved signatures for files that are commonly found in firmware images such as compressed/archived files, firmware headers, Linux kernels, bootloaders, filesystems, etc.
+- [**bulk-extractor**](https://github.com/simsong/bulk_extractor) or [Kali tools](https://www.kali.org/tools/bulk-extractor/) - bulk_extractor is a C++ program that scans a disk image, a file, or a directory of files and extracts useful information without parsing the file system or file system structures. The results are stored in feature files that can be easily inspected, parsed, or processed with automated tools. bulk_extractor also creates histograms of features that it finds, as features that are more common tend to be more important.
+- [**bytecode-viewer**](https://github.com/Konloch/bytecode-viewer) or [Kali tools](https://www.kali.org/tools/bytecode-viewer/)- This package contains Bytecode Viewer (BCV). It is an Advanced Lightweight Java Bytecode Viewer, GUI Java Decompiler, GUI Bytecode Editor, GUI Smali, GUI Baksmali, GUI APK Editor, GUI Dex Editor, GUI APK Decompiler, GUI DEX Decompiler, GUI Procyon Java Decompiler, GUI Krakatau, GUI CFR Java Decompiler, GUI FernFlower Java Decompiler, GUI DEX2Jar, GUI Jar2DEX, GUI Jar-Jar, Hex Viewer, Code Searcher, Debugger and more. There is also a plugin system that will allow you to interact with the loaded classfiles, for example you can write a String deobfuscator, a malicious code searcher, or something else you can think of. You can either use one of the pre-written plugins, or write your own. It supports groovy scripting. Once a plugin is activated, it will execute the plugin with a ClassNode ArrayList of every single class loaded in BCV, this allows the user to handle it completely using ASM.
+- [**cabextract**](https://packages.debian.org/unstable/cabextract) - Cabextract is a program which unpacks cabinet (.cab) files, which are a form of archive Microsoft uses to distribute their software and things like Windows Font Packs.
+- [**chkrootkit**](https://packages.debian.org/unstable/chkrootkit) - The chkrootkit security scanner searches for signs that the system is infected with a 'rootkit'. Rootkits are a form of malware that seek to exploit security flaws to grant unauthorised access to a computer or its services, generally for malicious purposes.chkrootkit can identify signs of over 70 different rootkits (see the project's website for a list). Please note that an automated tool like chkrootkit can never guarantee a system is uncompromised. Nor does every report always signify a genuine problem: human judgement and further investigation will always be needed to assure the security of your system.
+- [**creddump7**](https://packages.debian.org/unstable/creddump7) - This package contains a Python tool to extract various credentials and secrets from Windows registry hives. It's based on the creddump program. Many patches and fixes have been applied by Ronnie Flathers.
+- [**dc3dd**](https://packages.debian.org/unstable/dc3dd) - dc3dd is a patched version of GNU dd with added features for computer forensics: 
+    - on the fly hashing (md5, sha-1, sha-256, and sha-512)
+    - possibility to write errors to a file
+    - group errors in the error log
+    - pattern wiping
+    - progress report
+    - possibility to split output
+- [**dc3dd**](https://packages.debian.org/unstable/dcfldd) - dcfldd was initially developed at Department of Defense Computer Forensics Lab (DCFL). This tool is based on the dd program with the following additional features: 
+    - Hashing on-the-fly: dcfldd can hash the input data as it is being
+   transferred, helping to ensure data integrity.
+    - Status output: dcfldd can update the user of its progress in terms of the
+   amount of data transferred and how much longer operation will take.
+    - Flexible disk wipes: dcfldd can be used to wipe disks quickly and with a
+   known pattern if desired.
+    - Image/wipe verify: dcfldd can verify that a target drive is a bit-for-bit
+   match of the specified input file or pattern.
+    - Multiple outputs: dcfldd can output to multiple files or disks at the same
+   time.
+    - Split output: dcfldd can split output to multiple files with more
+   configurability than the split command.
+    - Piped output and logs: dcfldd can send all its log data and output to
+   commands as well as files natively.
+    - When dd uses a default block size (bs, ibs, obs) of 512 bytes, dcfldd uses
+   32768 bytes (32 KiB) which is HUGELY more efficient.
+    - The following options are present in dcfldd but not in dd: ALGORITHMlog:,
+   errlog, hash, hashconv, hashformat, hashlog, hashlog:, hashwindow, limit,
+   of:, pattern, sizeprobe, split, splitformat, statusinterval, textpattern,
+   totalhashformat, verifylog, verifylog:, vf.
+- [**ddrescue**](http://www.garloff.de/kurt/linux/ddrescue/) or [Kali tools](https://www.kali.org/tools/ddrescue/) - When your disk has crashed and you try to copy it over to another one, standard Unix tools like cp, cat, and dd will abort on every I/O error, dd_rescue does not. It optimizes copying by using large blocks as long as no errors occur and falls back to smaller blocks. It supports reverse direction copying (to approach a bad spot from the top), sparse copying, preallocating space, splice zerocopy, and bypassing the kernel pagecache with O_DIRECT. dd_rescue provides safe deletion of data by overwriting files (or better partitions/disks) multiple times with fast random numbers. With the ddr_hash plugin, it supports calculating a hash value (such as a sha256sum) or an HMAC during copying.
+- [**dumpzilla**](https://www.kali.org/tools/dumpzilla/) - Dumpzilla application is developed in Python 3.x and has as purpose extract all forensic interesting information of Firefox, Iceweasel and Seamonkey browsers to be analyzed. Due to its Python 3.x development, might not work properly in old Python versions, mainly with certain characters. Works under Unix and Windows 32/64 bits systems. Works in command line interface, so information dumps could be redirected by pipes with tools such as grep, awk, cut, sed… Dumpzilla allows one to visualize following sections, search customization and extract certain content.
+
 
 ## Command list
 - `sg_raw` - send arbitrary SCSI or NVMe command to a device
