@@ -87,9 +87,7 @@ sudo apt install kali-tools-forensics
 - [**forensics-colorize**](https://www.kali.org/tools/forensics-colorize/) [GitHub](https://github.com/jessek/colorize) - forensics-colorize is a set of tools to visually compare large files, as filesystem images, creating graphics of them. It is intuitive because the produced graphics provide a quick and perfect sense about the percentage of changes between two files. Comparing large textual files using a simple diff can produce a very big result in lines, causing confusion. On the other hand, diff is improper to compare binary files. This package provides two command line programs: filecompare and colorize. The filecompare command is used to create a special and auxiliary input file for colorize. The colorize command will generate an intuitive graphic that will make easier to perceive the level of changes between the files.
 - [**galleta**](https://www.kali.org/tools/galleta/) [SourceForge](http://odessa.sourceforge.net/) - Galleta is a forensics tool that examines the content of cookie files produced by Microsoft Internet Explorer (MSIE). It parses the file and outputs a field separated that can be loaded in a spreadsheet.
 - [**gdb**](https://www.kali.org/tools/gdb/) [Homepage](https://www.gnu.org/s/gdb/) - GDB is a source-level debugger, capable of breaking programs at any specific line, displaying variable values, and determining where errors occurred. Currently, gdb supports C, C++, D, Objective-C, Fortran, Java, OpenCL C, Pascal, assembly, Modula-2, Go, and Ada. A must-have for any serious programmer.
-- [**gpart**](https://www.kali.org/tools/gpart/) [GitHub](https://www.kali.org/tools/gpart/) - Gpart is a tool which tries to guess the primary partition table of a PC-type disk in case the primary partition table in sector 0 is damaged, incorrect or deleted.
-
-It is also good at finding and listing the types, locations, and sizes of inadvertently-deleted partitions, both primary and logical. It gives you the information you need to manually re-create them (using fdisk, cfdisk, sfdisk, etc.). The guessed table can also be written to a file or (if you firmly believe the guessed table is entirely correct) directly to a disk device. Currently supported (guessable) filesystem or partition types:
+- [**gpart**](https://www.kali.org/tools/gpart/) [GitHub](https://www.kali.org/tools/gpart/) - Gpart is a tool which tries to guess the primary partition table of a PC-type disk in case the primary partition table in sector 0 is damaged, incorrect or deleted. It is also good at finding and listing the types, locations, and sizes of inadvertently-deleted partitions, both primary and logical. It gives you the information you need to manually re-create them (using fdisk, cfdisk, sfdisk, etc.). The guessed table can also be written to a file or (if you firmly believe the guessed table is entirely correct) directly to a disk device. Gpart is useful in recovery actions and forensics investigations. Currently supported (guessable) filesystem or partition types:
     - BeOS filesystem type.
     - BtrFS filesystem type.
     - FreeBSD/NetBSD/386BSD disklabel sub-partitioning scheme used on Intel platforms.
@@ -103,9 +101,7 @@ It is also good at finding and listing the types, locations, and sizes of inadve
     - QNX 4.x filesystem.
     - The Reiser filesystem (version 3.5.X, X > 11).
     - Sun Solaris on Intel platforms uses a sub-partitioning scheme on PC hard disks similar to the BSD disklabels.
-    - Silicon Graphics journaled filesystem for Linux.
-    
-    Gpart is useful in recovery actions and forensics investigations.
+    - Silicon Graphics journaled filesystem for Linux. 
 - [****]()
 
 ## Command list
