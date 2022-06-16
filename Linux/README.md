@@ -5,6 +5,14 @@ There are many open-source tools out there to help with forensic imaging.
 
 This section is all about the Linux tools.
 
+## Setup
+### Kali
+You can quickly install useful packages for Forensic Tools in Kali: 
+```bash
+sudo apt install kali-tools-forensics
+```
+**Source:** https://www.kali.org/tools/kali-meta/#kali-tools-forensics
+> **NOTE:** If you click on *Dependencies* you can see all the packages that will be installed.
 ## Forensic tools
 - Sleuth Kit
 - dcfldd
