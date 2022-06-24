@@ -202,6 +202,11 @@ sudo apt install kali-tools-forensics
     - Full PIDs space occupation (PIDs bruteforcing)
     - Reverse search, verify that all thread seen by ps are also seen by the kernel (/bin/ps output vs /proc, procfs walking and syscall)
     - Quick compare /proc, procfs walking and syscall vs /bin/ps output
+- [**unrar-nonfree**](https://www.kali.org/tools/unrar-nonfree/) [Homepage](https://www.rarlab.com/) - Unrar can extract files from .rar archives. If you want to create .rar archives, install package rar.
+- [**upx-ucl**](https://www.kali.org/tools/upx-ucl/) [Homepage](https://upx.github.io/) - UPX is an advanced executable file compressor. UPX will typically reduce the file size of programs and DLLs by around 50%-70%, thus reducing disk space, network load times, download times etc. The current version can compress executables for DOS, Linux/ELF (i386, amd64, ppc32) and some other files for different OS. NOTE: This package is based on the UCL library, which is licensed under GPL.
+- [**vinetto**](https://www.kali.org/tools/vinetto/) [GitHub](https://github.com/AtesComp/Vinetto) - vinetto is a console program to extract thumbnail pictures and their metadata from Thumbs.db files, that are generated under Microsoft Windows. vinetto can help \*nix-based forensics investigators to:
+    - easily preview thumbnails of deleted pictures on Windows systems;
+    - obtain information (dates, path, …) about deleted pictures.
 
 ## Command list
 - `sg_raw` - send arbitrary SCSI or NVMe command to a device
