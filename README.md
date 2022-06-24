@@ -49,6 +49,9 @@ For banking as an example: Monetary Authority of Singapore (MAS)
 - [Practical Forensic Imaging | Securing Digital Evidence with Linux Tools
 by Bruce Nikkel](https://nostarch.com/forensicimaging) (ISBN-13: 978-1-59327-793-2) [Amazon.ca](https://www.amazon.ca/Practical-Forensic-Imaging-Securing-Evidence/dp/1593277938/ref=sr_1_1?crid=77TB014JA0DR&keywords=Practical+Forensic+Imaging&qid=1653000842&sprefix=practical+forensic+imaging+%2Caps%2C203&sr=8-1)
 - [File System Forensic Analysis](https://digital-evidence.org/fsfa/) [Amazon.ca](https://www.amazon.ca/System-Forensic-Analysis-Brian-Carrier/dp/0321268172/)
+### Videos
+- [Digital Forensics Using Kali Linux : Forensics Imaging Overview | packtpub.com | YouTube](https://www.youtube.com/watch?v=fWtJMLEUkxg)
+- [Digital Forensics with Kali Linux : Introduction to Forensic Imaging | packtpub.com | YouTube](https://www.youtube.com/watch?v=QjVzLRBuR7c)
 ### Websites
 - [Brian Carrier: Digital Investigation / Forensics and  Evidence Research](https://digital-evidence.org/)
 - [The 6 Best Linux File Recovery Software | FOSS Linux](https://www.fosslinux.com/41727/the-6-best-linux-file-recovery-software.htm)

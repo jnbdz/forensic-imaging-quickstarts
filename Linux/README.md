@@ -415,3 +415,5 @@ To make the output more readable use the `-h` flag.
 ## Resources
 - [`/dev`](https://tldp.org/LDP/abs/html/devref1.html)
 - [Managing devices in Linux | Opensource.com](https://opensource.com/article/16/11/managing-devices-linux)
+### Videos
+- [Kali Linux - vid 19 - Howto use forensic image acquisition and burning tool (dc3dd) - Linux Academy | YouTube](https://www.youtube.com/watch?v=u9KNWItM3o0)
