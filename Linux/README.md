@@ -301,8 +301,8 @@ sudo apt install -y sg3-utils exif lshw hddtemp dc3dd
         - `/dev/hd*` - for IDE
         - `/dev/md*` - for RAID arrays
         - `/dev/nvme*n*` - for NVME drives
-        - `/dev/loop*` - 
-        - `/dev/mapper/*` - 
+        - `/dev/loop*` - helper for files to access block devices (Also known as vnode disk (vnd), and loopback file interface (lofi)) (`losetup` is for set up and control of loop devices)
+        - `/dev/mapper/*` - Entries in that directory are [LVM](https://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)) logical volumes. They are like Linux native partition type. Linux also supports other partitions such as PC (MBR or GPT)
     - Each invidual partitions found by the Kernel are numbered (e.g.: sda1, sda2, hda1)
 - Partition block devices == contiguous sequence of disk sectors
 - `mknod` is the command for creation of devices files
@@ -385,6 +385,8 @@ The reasons why a FS might not be identify by the kernel:
 - FS offset on the disk is unknown
 - FS needs to be made accessible (unlock device, decrypt partition, etc)
 
+### Forensic image formats
+ 
 
 
 ## Commands
