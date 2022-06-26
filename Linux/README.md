@@ -387,6 +387,25 @@ The reasons why a FS might not be identify by the kernel:
 
 ### Forensic image formats
 - [Survey of Disk Image Storage Formats](http://old.dfrws.org/CDESF/survey-dfrws-cdesf-diskimg-01.pdf) (External link) [Survey of Disk Image Storage Formats](/Documents/non-gov/DFRWS/CDESF/Surveys/survey-dfrws-cdesf-diskimg-01.pdf) (Internal link) - This document is introductory paper desribing various forensic formats on the Digital Forensic Research Workshop (DFRWS)
+- `img_stat -i list` - List the commonly used forensic formats described in this chapter by using the Sleuth Kit: 
+    - raw (Single or split raw file (dd))
+    - aff (Advanced Forensic Format)
+    - afd (AFF Multiple File)
+    - afm (AFF with external metadata)
+    - afflib (All AFFLIB image formats (including beta ones))
+    - ewf (Expert Witness Format (EnCase))
+    - vmdk (Virtual Machine Disk (VmWare, Virtual Box))
+    - vhd (Virtual Hard Drive (Microsoft))
+
+> **NOTE:** In forensic images are not copy of files; they are a copy of the disk sector. Its starts at the sector 0 to the last sector on the disk that is accessible.
+> The raw image size is equal to the full disk size. The number of files is irrelevant.
+
+- *raw images* are chunks of raw data
+    - No additional metadata, only the info about the image file itself
+        - name
+        - size
+        - timestamps
+        - other information on the image's own inode
 
 
 ## Commands
