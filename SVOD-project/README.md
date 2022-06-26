@@ -1,4 +1,4 @@
-<img src="../assets/svod-project.png" alt="SVOD project (tool picture)" style="width: 255px;" align="right">
+<img src="../assets/svod-project.png" alt="SVOD project (tool picture)" style="width: 315px;" align="right">
 
 # SVOD-project | Forensic Imaging | Quickstarts
 This section is about the [SVOD-project](https://svod-project.com/en/) tool and how to use it.
