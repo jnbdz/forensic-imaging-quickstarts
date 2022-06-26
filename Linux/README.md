@@ -386,7 +386,7 @@ The reasons why a FS might not be identify by the kernel:
 - FS needs to be made accessible (unlock device, decrypt partition, etc)
 
 ### Forensic image formats
-- [Survey of Disk Image Storage Formats](http://old.dfrws.org/CDESF/survey-dfrws-cdesf-diskimg-01.pdf)(External link) [Survey of Disk Image Storage Formats](/forensic-imaging-quickstarts/blob/main/Documents/non-gov/DFRWS/CDESF/Surveys/survey-dfrws-cdesf-diskimg-01.pdf)(Internal link) - This document is introductory paper desribing various forensic formats on the Digital Forensic Research Workshop (DFRWS)
+- [Survey of Disk Image Storage Formats](http://old.dfrws.org/CDESF/survey-dfrws-cdesf-diskimg-01.pdf) (External link) [Survey of Disk Image Storage Formats](/Documents/non-gov/DFRWS/CDESF/Surveys/survey-dfrws-cdesf-diskimg-01.pdf) (Internal link) - This document is introductory paper desribing various forensic formats on the Digital Forensic Research Workshop (DFRWS)
 
 
 ## Commands
