@@ -5,6 +5,7 @@ This section is about the [SVOD-project](https://svod-project.com/en/) tool and 
 
 ## Resources
 - [SVOD store](https://shop.svod-project.com/)
+- [Download | svod-project.com](https://svod-project.com/en/download) - The application to use SVOD-project.
 ### Videos
 - [how to use programmer SVOD A-Z | YouTube](https://www.youtube.com/watch?v=S_zSDy5KqcE) - You can use the captions if you don't understand.
 - [Svod 3 | Svod 4 | Universal Programmer Simple | Easy | Fast | Reliable | YouTube](https://www.youtube.com/watch?v=F8A-t4449kQ)
