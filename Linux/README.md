@@ -409,13 +409,54 @@ The reasons why a FS might not be identify by the kernel:
     - It is sequence of bytes from a source device
 #### Using `dd`
 - Wasn't deisgn for evidence collection
+- Created in the 1970s
 - It can do a low-level copy of the sectors
 - It will preserve the filesystem structure, filesm directories, and metadata
 - But you lose on (inadequate or it does not support): 
     - logging
     - error handling
     - hashing
-- 
+- It can also work on tapes
+#### Variants of `dd`
+- Those variants were designed for forensic imaging
+- Some of these features are: 
+    - Cryptographic hashing
+    - Improved error handling
+    - Logging
+    - Performance enhancements
+    - Verification checking
+    - Progress monitoring (some actions may take hours)
+- Variantsi (you can find the test results CFTT (NIST) (you can find the link in the root README)): 
+    - `dcfldd`
+        - Created by the US Department of Defense Computer Forensic Lab (DCFL) (2002)
+        - No update since 2006
+        - Based on GNU `dd`
+        - Added features: 
+            - Better logging
+            - splitting output files
+            - hashing
+            - *Many more*
+        - *FORK:* https://github.com/adulau/dcfldd (contains fixes for *Debian*)
+    - `dc3dd`
+        - Created by the US Department of Defense Cyber Crime Center (DC3) (2007)
+        - Based on GNU `dd`
+        - Still maintained
+        - Similar added features to `dcfldd`
+- Downside to `dcfldd` and `dc3dd`: 
+    - Does support writting od forensic formats: 
+        - FTK
+        - Encase
+        - AFF
+    - compression
+    - image encryption
+#### Data Recovery Tools
+- Useful for: 
+    - robust error handling
+    - aggressive recovery methods
+    - in the case that all other forensic tools have fail (because of severely damaged storage media)
+- GNU tools: 
+    - `ddrescue`
+    - `dd_rescue`
 
 ## Commands
 ## `nvme`
