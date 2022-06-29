@@ -406,7 +406,16 @@ The reasons why a FS might not be identify by the kernel:
         - size
         - timestamps
         - other information on the image's own inode
-
+    - It is sequence of bytes from a source device
+#### Using `dd`
+- Wasn't deisgn for evidence collection
+- It can do a low-level copy of the sectors
+- It will preserve the filesystem structure, filesm directories, and metadata
+- But you lose on (inadequate or it does not support): 
+    - logging
+    - error handling
+    - hashing
+- 
 
 ## Commands
 ## `nvme`
