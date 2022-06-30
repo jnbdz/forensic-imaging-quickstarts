@@ -459,7 +459,41 @@ The reasons why a FS might not be identify by the kernel:
     - `dd_rescue` - It also supports: encryption, hashing, and more feature with the help of plugins
     - `myrescue`
     - `safecopy`
-
+#### Forensic Formats
+- Also known as *evidence containers*
+- Formats: 
+    - **EnCase EWF**
+        - EWF: Expert Witness Format
+        - Supports: 
+            - metadata
+            - compression
+            - encryption
+            - hashing
+            - split files
+            - etc
+        - There is also `libewf` (can be compiled into **Sleuth Kit**)
+    - **FTK SMART**
+        - Similar to **EnCase EWF**
+        - Proprietary format
+        - `ftkimager` is the command line tool (free but not open source)
+    - **AFF**
+        - AFF: Advance Forensic Format
+        - It supports X.509 certificates
+        - AFFlib software contains a number of tools for conversion and managing
+        - Version 3: https://github.com/sshock/AFFLIBv3
+        - Version 4: http://www2.aff4.org/
+    - **SquashFS Background**
+        - filesystem written for Linux
+        - Init. designed for bootable CDs and embeded systems
+        - Nice features for forensic imaging: 
+            - SquashFS is a highly compresses filesystem
+            - Read-only (only add nothing else can be done)
+            - Contains investigator's uid/gid and creation timestamps
+            - Large file sizes supported (could go to 16EiB)
+            - Merged into the Linux kernel in 2009 (version 2.6.29)
+            - FS is an open standard so it can work on Windos or even OS X
+            - `mksquashfs` tool uses all available CPUs to create a container
+            - Makes it easier to manage compressed raw images acquired with `dd`
 
 ## Commands
 ## `nvme`
