@@ -436,7 +436,7 @@ The reasons why a FS might not be identify by the kernel:
             - splitting output files
             - hashing
             - *Many more*
-        - *FORK:* https://github.com/adulau/dcfldd (contains fixes for *Debian*)
+        - **FORK:** https://github.com/adulau/dcfldd (contains fixes for *Debian*)
     - `dc3dd`
         - Created by the US Department of Defense Cyber Crime Center (DC3) (2007)
         - Based on GNU `dd`
@@ -454,9 +454,12 @@ The reasons why a FS might not be identify by the kernel:
     - robust error handling
     - aggressive recovery methods
     - in the case that all other forensic tools have fail (because of severely damaged storage media)
-- GNU tools: 
-    - `ddrescue`
-    - `dd_rescue`
+- GNU tools (similar syntax to `dd`): 
+    - `ddrescue` - (*Debian* package: `gddrescue`) uses persistent methods to (attempt) recover bad areas on the disk
+    - `dd_rescue` - It also supports: encryption, hashing, and more feature with the help of plugins
+    - `myrescue`
+    - `safecopy`
+
 
 ## Commands
 ## `nvme`
