@@ -86,6 +86,16 @@ by Bruce Nikkel](https://nostarch.com/forensicimaging) (ISBN-13: 978-1-59327-793
 - [Awesome Forensics Resources. Almost 300 open source forensics tools, and 600 blog posts about forensics](https://github.com/alphaSeclab/awesome-forensics)
 - [Digital Forensics Guide](https://github.com/mikeroyal/Digital-Forensics-Guide)
 ### Tools
+- [HFSExplorer | GitHub](https://github.com/unsound/hfsexplorer) - HFSExplorer - An application for accessing HFS/HFS+/HFSX file systems. License: GPLv3+
+- [DMGExtractor | GitHub](https://github.com/unsound/dmgextractor) - DMGExtractor, a Java application for extracting the contents of Mac OS X disk images. License: LGPLv3+ [Website](http://www.catacombae.org/dmgextractor)
+- [catacombaeframework | GitHub](https://github.com/unsound/catacombaeframework) - Common Java framework for Catacombae projects. License: LGPLv2.1+
+- [IOLVMPartitionScheme | GitHub](https://github.com/unsound/IOLVMPartitionScheme) - Mac OS X (10.5+) kernel extension which parses a Linux LVM2 layout and exposes single-device contiguous volumes as partitions. License: LGPL v2.1
+- [jfuse | GitHub](https://github.com/unsound/jfuse) - Java library for developing FUSE filesystems. License: LGPLv2.1+
+- [parted-freebsd | GitHub](https://github.com/unsound/parted-freebsd) - GNU Parted patched to work on FreeBSD (configure with --disable-Werror (clang) or use gcc)
+- [catacombae](http://www.catacombae.org/) - Has a bunch on tools that are useful for accessing drive data.
+    - [catacombae Blogspot](http://catacombae.blogspot.com/) - Blog
+- [macFUSE | GitHub](https://github.com/osxfuse) - macFUSE allows you to extend macOS's native file handling capabilities via third-party file systems. [Website](https://osxfuse.github.io/)
+- [Tuxera | GitHub](https://github.com/tuxera) - Disk tools. [Website](https://www.tuxera.com/)
 - https://github.com/CIRCL
 - [The Sleuth Kit (TSK) & Autopsy: Open Source Digital Forensics Tools](http://www.sleuthkit.org/) [The Sleuth Kit | GitHub](https://github.com/sleuthkit)
 - [TestDisk, Data Recovery](https://www.cgsecurity.org/wiki/TestDisk)
