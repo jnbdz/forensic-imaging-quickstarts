@@ -1,4 +1,4 @@
-<img src="assets/basic-forensics-imaging-kit.jpg" alt="Basic Forensics Imaging Kit" style="width: 400px;" align="right">
+<img src="assets/basic-forensics-imaging-kit.jpg" alt="Basic Forensics Imaging Kit" style="width: 300px;" align="right">
 
 # forensic-imaging-quickstarts
 Forensic Imaging quickstarts!
